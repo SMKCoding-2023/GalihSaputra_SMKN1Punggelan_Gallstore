@@ -1,7 +1,6 @@
 <template>
     <section>
         <Header />
-
         <slot />
 
         <Footer />
