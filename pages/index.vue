@@ -2,7 +2,7 @@
     <div class="begron">
   <div class="container">
     <div class="ndas">
-      <p  style="">home</p>
+      <p>home</p>
     </div>
 
     <div class="anu">
