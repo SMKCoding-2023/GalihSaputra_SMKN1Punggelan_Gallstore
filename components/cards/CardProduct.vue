@@ -19,7 +19,7 @@ bold mb-4 text-limit limit-2">{{ props.product.name }}</h3></NuxtLink>
 
 <div class="flex justify-between items-center">
 <span class="text-sm font-normal">{{ props.product.category }}</span>
-<span class="text-sm font-normal">${{ props.product.price }}</span>
+<span class="text-sm font-normal">Rp:{{ props.product.price }}.000</span>
 </div>
 
 <div :class="`cursor-pointer absolute -top-5 right-7 w-[50px] h-[50px] bg-
