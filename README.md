@@ -1,5 +1,5 @@
-name : galih 
-email: gs3260474@gmail.com
+# name : galih 
+# email: gs3260474@gmail.com
 
 # Nuxt 3 Minimal Starter
 
