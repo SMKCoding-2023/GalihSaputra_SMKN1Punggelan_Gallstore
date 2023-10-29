@@ -75,10 +75,12 @@ yarn preview
 bun run preview
 
 ```
+
+## tips
+
 code yang bisa di gunakan
 ```bash
 
-## tips
 #supaya bisa di akses melalui ip
 npm run dev -- --host 
 ```
