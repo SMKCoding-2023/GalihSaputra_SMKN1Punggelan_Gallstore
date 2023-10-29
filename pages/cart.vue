@@ -1,7 +1,7 @@
 <template>
   
   <div class="begron">
-  
+    <div class="py-10">
   <div class="container">
     <div class="ndas">
     <h1>card</h1>
@@ -12,4 +12,5 @@
   </div>
 </div>
 </div>
+  </div>
     </template>
