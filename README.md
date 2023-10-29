@@ -73,6 +73,13 @@ yarn preview
 
 # bun
 bun run preview
+
+```
+code yang bisa di gunakan
+```bash
+
+#supaya bisa di akses melalui ip
+npm run dev -- --host 
 ```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
