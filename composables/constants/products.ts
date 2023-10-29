@@ -102,7 +102,7 @@ export const products = [
     name: "Casing Mewah Matte Hardcase Akrilik Tahan Guncangan Untuk Iphone 15 Pro Max Premium Case Penutup Belakang",
     category: "case",
     price: 90,
-    image: "/images/products/hp-6.png",
+    image: "/images/products/case-11.png",
     isCart: false,
     description: "Bahan: Akrilik (Hardcase) Fitur tahan guncangan, tahan debu, anti sidik jari. Sepenuhnya sangat menlindungi ponsel anda, karna sangat safety saat di gunakan dan tentunya juga enak di genggam. Ready dari IP 11-15 PRO MAX Color: - Matte Blue - Matte Black - Matte White - Matte Purple Setelah diorder tidak bisa di cancel, Terima kasih Happy Shopping in racuncase.id",
   },
@@ -113,7 +113,7 @@ export const products = [
     name: "Hardcase Asus Rog Phone 7/Rog Phone 6 Crystal Airbag Hybrid Case Asus Rog Phone 7 Rog Phone 6",
     category: "case",
     price: 60,
-    image: "/images/products/hp-6.png",
+    image: "/images/products/case-12.png",
     isCart: false,
     description: "Teknologi airbag built-in yang melindungi hp dari jatuh atau benturan. ● dengan ketebalan 8mm di pinggir melindungi kamera dan layar hp ● cutting yang tepat untuk akses tombol / kamera / port ● dengan bahan CP yang berkualitas tinggi Transparant: transparansi tinggi, pertahankan karakteristik ponsel Anda. Anti debu sehingga membuat hp Anda tetap kelihatan bersih.",
   }
