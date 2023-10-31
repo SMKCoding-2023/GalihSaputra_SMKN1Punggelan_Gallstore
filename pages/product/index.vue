@@ -17,6 +17,8 @@ return products;
 <div class="mb-6 flex justify-end gap-6, ndas">
 <h1 style="padding: auto; margin: auto;" >produk</h1> 
 <Dropdown @selected-category="selectedCategory = $event" />
+<NuxtLink to="/category/create" class="bg-orange-500 text-white flex justify-
+center items-center px-3 rounded-lg">Create Category</NuxtLink>
 </div>
 <div class="flex gap-6 flex-wrap mx-auto">
 <template v-for="(item, index) in allProducts" :key="index">
