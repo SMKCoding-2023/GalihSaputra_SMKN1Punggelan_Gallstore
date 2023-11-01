@@ -14,21 +14,29 @@
 </div>
 </div>
     </template> -->
-    <script lang="ts" setup>
-    import type { Products } from '~/types/products';
-    const products = ref<Products[]>([]);
-    const totalPrice = computed(() => {
-    return products.value.filter((product) => product.price !==
-    undefined).reduce((accumulator, currentValue) => accumulator +
-    currentValue.price!, 0);
-    })
-    onMounted(() => {
-    let localStorageData = localStorage.getItem("products");
-    if (localStorageData) {
+<script lang="ts" setup>
+import type { Products } from "~/types/products";
+const products = ref<Products[]>([]);
+const totalPrice = computed(() => {
+  return products.value
+    .filter((product) => product.price !== undefined)
+    .reduce(
+      (accumulator, currentValue) => accumulator + currentValue.price!,
+      0
+    );
+});
+onMounted(() => {
+  let localStorageData = localStorage.getItem("products");
+  if (localStorageData) {
     products.value = JSON.parse(localStorageData);
-    }
-    })
-    </script>
+  }
+});
+
+const removeCart = (id: number) => {
+  products.value = products.value.filter((item) => item.id !== id);
+  localStorage.setItem("products", JSON.stringify(products.value));
+};
+</script>
 
 <template>
   <section>
@@ -43,7 +51,7 @@
           </div>
           <div v-if="products.length > 0" class="flex flex-col gap-6">
             <template v-for="(item, index) in products" :key="index">
-              <CardsCardCart :product="item" />
+              <CardsCardCart :product="item" @removeCart="removeCart" />
             </template>
           </div>
           <div v-else>
