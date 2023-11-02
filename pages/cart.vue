@@ -57,9 +57,9 @@ const removeCart = (id: number) => {
           <div v-else>
             <h5 class="text-xl font-light text-center">Cart is empty</h5>
           </div>
-          <div class="flex flex-col gap-6">
+          <!-- <div class="flex flex-col gap-6">
             <CardsCardCart />
-          </div>
+          </div> -->
         </div>
         <div class="w-[30%] bg-white shadow-xl h-max p-6">
           <h3 class="text-xl font-medium mb-6">Order Summary</h3>
