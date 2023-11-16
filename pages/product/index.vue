@@ -12,7 +12,7 @@ const selectedCategory = ref("");
 </script>
 
 <template>
-   <div style=" background-image: url('/images/img/begron.jpg'); ">
+   <div style=" background-image: url('/images/begron.jpg'); ">
     <section>
       <div class="container">
         <div class="py-10">
