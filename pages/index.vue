@@ -1,5 +1,5 @@
 <template>
-  <div class="begron">
+   <div style=" background-image: url('/images/img/begron.jpg'); ">
     <div class="container">
       <div class="py-10">
         <div class="ndas">
@@ -10,7 +10,7 @@
           <NuxtLink to="/product">
             <img
               style="max-width: 150px; max-height: 150px"
-              src="img/nezuko.png"
+              src="images/img/nezuko.png"
               alt="nezuko"
             />
             <h1 style="text-align: center">gallstore</h1>

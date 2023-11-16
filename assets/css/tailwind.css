@@ -42,7 +42,8 @@ footer {
   }
 
   .begron {
-  background: url("img/begron.jpg");
+    
+  background: url("/img/begron.jpg");
   }
   
   .example {
