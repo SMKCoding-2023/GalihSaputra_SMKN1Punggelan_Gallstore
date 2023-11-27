@@ -10,7 +10,7 @@
           <NuxtLink to="/product">
             <img
               style="max-width: 150px; max-height: 150px"
-              src="images/nezuko.png"
+              src="/images/nezuko.png"
               alt="nezuko"
             />
             <h1 style="text-align: center">gallstore</h1>
