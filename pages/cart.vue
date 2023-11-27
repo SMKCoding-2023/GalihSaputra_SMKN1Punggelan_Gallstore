@@ -37,7 +37,9 @@ const removeCart = (id: number) => {
   localStorage.setItem("products", JSON.stringify(products.value));
 };
 </script>
-
+definePageMeta({
+  middleware: ["user-access"]
+ });
 <template>
   <section>
     <div class="container">

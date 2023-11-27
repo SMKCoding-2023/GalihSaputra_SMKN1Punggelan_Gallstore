@@ -1,5 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  
   appConfig: {
     apikey: process.env.SUPABASE_API_KEYS,
     baseUrl: process.env.SUPABASE_URL,

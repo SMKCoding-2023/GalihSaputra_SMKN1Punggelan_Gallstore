@@ -11,6 +11,10 @@ allProducts.value = productStore.products;
 const selectedCategory = ref("");
 </script>
 
+definePageMeta({
+  middleware: ["user-access"]
+ });
+
 <template>
    <div style=" background-image: url('/images/begron.jpg'); ">
     <section>
