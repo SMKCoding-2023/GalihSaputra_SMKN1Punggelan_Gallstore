@@ -24,8 +24,8 @@ export default defineNuxtConfig({
     /* your pwa options */
     manifest: {
       
-  "name": "smkcoding",
-  "short_name": "smkcoding",
+  "name": "Gallsrore",
+  "short_name": "Gallstore",
   "theme_color": "#fff",
   "background_color": "#fff",
   "display": "standalone",
