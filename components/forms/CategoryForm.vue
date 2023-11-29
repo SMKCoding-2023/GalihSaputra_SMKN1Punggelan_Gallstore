@@ -1,22 +1,32 @@
-<script lang="ts" setup>
-import { category } from "~/composables/constants/category";
-const categories = ref(category);
+<script setup lang="ts">
+import { useCategoryStore } from '~/stores/category';
+
+const categoryStore = useCategoryStore();
 const form = ref({
   name: "",
 });
 const isShowAlert = ref(false);
-const submitCategory = () => {
-  categories.value.push({
-    id: categories.value.length + 1,
+
+const submitCategory = async () => {
+  const newCategory = {
     name: form.value.name,
-  });
-  isShowAlert.value = true;
-  form.value.name = "";
-  setTimeout(() => {
-    isShowAlert.value = false;
-  }, 3000);
+  };
+
+  await categoryStore.category(newCategory);
+
+  if (categoryStore.status) {
+    isShowAlert.value = true;
+    form.value.name = "";
+    setTimeout(() => {
+      isShowAlert.value = false;
+    }, 3000);
+  } else {
+    console.error(categoryStore.message);
+    // Handle error, show error message, etc.
+  }
 };
 </script>
+
 <template>
   <div class="begron">
     <section class="flex justify-center py-10">

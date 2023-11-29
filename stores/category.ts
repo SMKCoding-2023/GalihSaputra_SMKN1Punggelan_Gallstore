@@ -4,7 +4,29 @@ export const useCategoryStore = defineStore("category", {
     status: false,
     message: "",
   }),
+
+
   actions: {
+    async category (submitCategory : any) {
+      const { baseUrl, apikey } = useAppConfig();
+      const { data, error } = await useFetch("/rest/v1/categories", {
+        baseURL: baseUrl,
+        method: "POST",
+        headers: {
+          apikey: apikey,
+        },
+        body: submitCategory ,
+      });
+
+      if (error.value) {
+        this.status = false;
+        this.message = "Get Products Failed !!!";
+      } else if (data) {
+        this.status = true;
+        this.message = "Get Products successfully";
+      }
+    },
+
     async getAllCategory() {
       const { baseUrl, apikey } = useAppConfig();
       const { data, error } = await useFetch("/rest/v1/categories", {
