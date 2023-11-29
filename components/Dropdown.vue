@@ -1,7 +1,16 @@
-<script lang="ts" setup>
-import { category } from "~/composables/constants/category";
+<script setup lang="ts">
+import { ref, defineEmits, onMounted } from 'vue';
+import { useCategoryStore } from "~/stores/category";
+
+const categoryStore = useCategoryStore();
 const isShow = ref(false);
+
 defineEmits(["selectedCategory"]);
+
+onMounted(async () => {
+  await categoryStore.getAllCategory();
+});
+
 </script>
 
 <template>
@@ -26,15 +35,13 @@ duration-300 ${isShow ? 'rotate-180' : 'rotate-0'}`"
           <span
             class="block px-4 py-2 hover:bg-primary hover:text-white transition duration-200 cursor-pointer"
             @click="$emit('selectedCategory', '' )"
-            >semua</span
-          >
+          >semua</span>
         </li>
-        <li v-for="(item, index) in category" :key="index">
+        <li v-for="(item, index) in categoryStore.categories" :key="index">
           <span
             class="block px-4 py-2 hover:bg-primary hover:text-white transition duration-200 cursor-pointer"
-            @click="$emit('selectedCategory', item.name)"
-            >{{ item?.name }}</span
-          >
+            @click="$emit('selectedCategory', item?.name)"
+          >{{ item?.name }}</span>
         </li>
       </ul>
     </div>

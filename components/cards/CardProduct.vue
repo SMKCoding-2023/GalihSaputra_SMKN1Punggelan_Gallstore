@@ -12,7 +12,7 @@ const { baseStorageUrl } = useAppConfig();
 </script>
 
 <template>
-  <section class="bg-white shadow-xl rounded-xl overflow-hidden">
+  <section class="bg-white shadow-xl rounded-xl overflow-hidden  shadow-md hover:shadow-xl transition-all duration-300 transform hover:scale-105 ">
     <div :class="`w-full h-[200px] p-5 bg-gray-300`">
       <img
         :src="baseStorageUrl + props.product.image"

@@ -16,7 +16,7 @@ definePageMeta({
  });
 
 <template>
-   <div style=" background-image: url('/images/begron.jpg'); ">
+   <div class="bg-gray-400">
     <section>
       <div class="container">
         <div class="py-10">
@@ -33,7 +33,7 @@ items-center px-3 rounded-lg">Create Products</NuxtLink>
           </div>
           <div class="flex gap-6 flex-wrap mx-auto">
             <template v-for="(item, index) in allProducts" :key="index">
-              <CardsCardProduct :product="item" class="w-[calc(100%/4-18px)]" />
+              <CardsCardProduct :product="item" class="w-1/1" />
             </template>
           </div>
         </div>
