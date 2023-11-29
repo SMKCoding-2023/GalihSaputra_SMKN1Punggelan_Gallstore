@@ -28,7 +28,6 @@ const submitCategory = async () => {
 </script>
 
 <template>
-  <div class="begron">
     <section class="flex justify-center py-10">
       <div class="w-[500px]">
         <h1 class="text-2xl mb-7 font-medium">Create Category</h1>
@@ -64,5 +63,4 @@ const submitCategory = async () => {
         </form>
       </div>
     </section>
-  </div>
 </template>
