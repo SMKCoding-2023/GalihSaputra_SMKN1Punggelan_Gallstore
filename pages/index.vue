@@ -34,7 +34,7 @@ const selectedCategory = ref("");
         <div class="py-10">
           <div class="flex gap-6 flex-wrap mx-auto">
             <template v-for="(item, index) in allProducts" :key="index">
-              <CardsCardProduct :product="item" class="w-1/1" />
+              <CardsCardProduct :product="item" class="w-1/4 h-1/5" />
             </template>
           </div>
         </div>

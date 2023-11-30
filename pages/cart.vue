@@ -41,8 +41,8 @@ definePageMeta({
   middleware: ["user-access"]
  });
 <template>
-  <section>
-    <div class="container">
+  <section class="bg-gray-400">
+    <div class="container ">
       <div class="py-10 flex gap-6">
         <div class="w-[70%]">
           <div
@@ -63,7 +63,7 @@ definePageMeta({
             <CardsCardCart />
           </div> -->
         </div>
-        <div class="w-[30%] bg-white shadow-xl h-max p-6">
+        <div class="w-[30%] bg-gray-200 shadow-xl h-max p-6">
           <h3 class="text-xl font-medium mb-6">Order Summary</h3>
           <div class="flex flex-col gap-3 border-b border-gray-300 pb-4">
             <div v-if="products.length > 0">

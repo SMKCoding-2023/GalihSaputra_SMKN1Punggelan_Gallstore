@@ -22,9 +22,9 @@ const selectedCategory = ref("");
             <h1 style="padding: auto; margin: auto">produk</h1>
             <Dropdown @selected-category="selectedCategory = $event" />
           </div>
-          <div class="flex gap-6 flex-wrap mx-auto">
+          <div class="flex gap-3 flex-wrap mx-2 ">
             <template v-for="(item, index) in allProducts" :key="index">
-              <CardsCardProduct :product="item" class="w-1/1" />
+              <CardsCardProduct :product="item" class="w-1/1 h-1/1" />
             </template>
           </div>
         </div>
