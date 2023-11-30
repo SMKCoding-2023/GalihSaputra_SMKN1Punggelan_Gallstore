@@ -9,6 +9,7 @@ allProducts.value = productStore.products;
 });
 
 const selectedCategory = ref("");
+
 </script>
 
 <template>
