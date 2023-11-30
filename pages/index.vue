@@ -33,7 +33,7 @@ const selectedCategory = ref("");
     <section>
       <div class="container">
         <div class="py-10">
-          <div class="flex gap-6 flex-wrap mx-auto">
+          <div class="flex gap-3 flex-wrap mx-auto">
             <template v-for="(item, index) in allProducts" :key="index">
               <CardsCardProduct :product="item" class="w-1/4 h-1/5" />
             </template>
