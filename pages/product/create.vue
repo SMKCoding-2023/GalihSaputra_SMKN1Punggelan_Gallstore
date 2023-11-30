@@ -24,7 +24,7 @@ const formCreateProduct = [
   { name: "image", label: "Image", type: "file", value: {}, placeholder: "", required: true },
   { name: "category", label: "Category", type: "select", value: "", placeholder: "", required: true },
 ];
-
+ 
 const createProduct = async () => {
   isLoading.value = true;
   let file = formCreateProduct.find((item) => item.type === "file");
