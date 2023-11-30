@@ -31,7 +31,7 @@ const selectedCategory = ref("");
     <!-- Featured Products Section -->
     <div class="bg-gray-400">
     <section>
-      <div class="container">
+      <div >
         <div class="py-10">
           <div class="flex gap-3 flex-wrap mx-auto">
             <template v-for="(item, index) in allProducts" :key="index">
