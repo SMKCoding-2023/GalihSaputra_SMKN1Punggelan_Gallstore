@@ -32,6 +32,11 @@ const selectedCategory = ref("");
     <div class="bg-gray-400">
     <section>
       <div >
+        <section class="py-12 bg-gray-300">
+      <div class="container mx-auto">
+        <h2 class="text-3xl font-bold mb-8 text-center">Produk Unggulan</h2>
+      </div>
+    </section>
         <div class="py-10">
           <div class="flex gap-3 flex-wrap mx-auto">
             <template v-for="(item, index) in allProducts" :key="index">
