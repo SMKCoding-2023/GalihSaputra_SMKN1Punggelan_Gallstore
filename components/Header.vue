@@ -34,7 +34,7 @@ const logout = async () => {
           <NuxtLink
               to="/category/create"
               class="bg-orange-500 text-white flex justify- center items-center px-3 rounded-lg"
-              >type</NuxtLink>
+              >add type</NuxtLink>
  
               <NuxtLink to="/product/create" class="bg-green-500 text-white flex justify-center
 items-center px-3 rounded-lg">jual</NuxtLink>

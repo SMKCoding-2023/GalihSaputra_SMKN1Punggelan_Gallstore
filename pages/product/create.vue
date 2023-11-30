@@ -73,9 +73,6 @@ const uploadFile = async (formFile: any) => {
   }
 }
 
-definePageMeta({
-  middleware: ["user-access"]
- });
 </script>
 
 
