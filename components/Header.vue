@@ -30,8 +30,15 @@ const logout = async () => {
           <NuxtLink to="/" class="text-base">🏠</NuxtLink>
 
           <NuxtLink to="/product" class="text-base">🛍️</NuxtLink>
-
-          <NuxtLink to="/cart" class="text-base"> 🛒</NuxtLink>
+ <NuxtLink to="/cart" class="text-base"> 🛒</NuxtLink>
+          <NuxtLink
+              to="/category/create"
+              class="bg-orange-500 text-white flex justify- center items-center px-3 rounded-lg"
+              >type</NuxtLink>
+ 
+              <NuxtLink to="/product/create" class="bg-green-500 text-white flex justify-center
+items-center px-3 rounded-lg">jual</NuxtLink>
+         
           <NuxtLink v-if="!isAuthenticated" to="/login" class="text-base bg-blue-600
 px-6 py-2 text-white rounded-lg hover:bg-blue-600/80">Login</NuxtLink>
 <div v-else class="text-base cursor-pointer bg-red-600 px-6 py-2 text-white

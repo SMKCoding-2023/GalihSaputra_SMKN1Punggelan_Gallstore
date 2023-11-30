@@ -4,6 +4,7 @@ import { useStorageStore } from "~/stores/storage";
 import { useProductsStore } from '~/stores/products';
 import type { FormField } from '~/types/products';
 
+
 const categoryStore = useCategoryStore();
 const storageStore = useStorageStore();
 const productStore = useProductsStore();
@@ -71,6 +72,10 @@ const uploadFile = async (formFile: any) => {
     return storageStore.storage.Key;
   }
 }
+
+definePageMeta({
+  middleware: ["user-access"]
+ });
 </script>
 
 
